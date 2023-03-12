@@ -12,11 +12,11 @@ const App = () => {
 
   return (
     <>
-      <div className="absolute top-0 right-0 -z-50">
+      <div className="absolute top-0 lg:top-0 lg:right-0 -z-50">
         <img src={topBG} alt="" className="w-full max-w-full" />
       </div>
-      <section className="p-5 lg:flex lg:flex-col items-center justify-center lg:h-screen">
-        <h1 className="text-center text-slate-500  mb-8 text-3xl">
+      <div className="my-11 lg:my-0 p-8 lg:flex lg:flex-col items-center justify-center lg:h-screen">
+        <h1 className="text-center text-slate-500 mb-11 lg:mb-8 text-4xl">
           Our Pricing
         </h1>
         <div className="toggle lg:mb-14">
@@ -34,14 +34,14 @@ const App = () => {
           <label className="name">Monthly</label>
         </div>
         <div className="flex flex-wrap flex-col justify-center gap-8 text-center max-w-6xl mx-auto lg:gap-0 lg:flex-row lg:flex-nowrap lg:w-full">
-          <article className="p-8 rounded bg-white shadow lg:w-full">
+          <article className="p-8 mt-16 lg:mt-0 rounded-xl bg-white shadow lg:w-full">
             <h2 className="text-slate-500 text-xl mb-5">Basic</h2>
             {!Annually ? (
-              <h3 className="flex items-center justify-center text-slate-700 text-7xl mr-3">
+              <h3 className="flex items-center justify-center text-[#494c5f] text-7xl mr-3">
                 <span className="text-3xl">$</span>19.99
               </h3>
             ) : (
-              <h3 className="flex items-center justify-center text-slate-700 text-7xl mr-3">
+              <h3 className="flex items-center justify-center text-[#494c5f] text-7xl mr-3">
                 <span className="text-3xl">$</span>199.99
               </h3>
             )}
@@ -56,11 +56,11 @@ const App = () => {
                 Send up to 3 GB
               </li>
             </ul>
-            <button className="linear-gradient text-white border-none py-2 w-full rounded-lg shadow uppercase cursor-pointer hover:bg-transparent hover:text-slate-800">
+            <button className="linear-gradient text-white border-none py-2 w-full rounded-lg shadow uppercase cursor-pointer hover:bg-transparent hover:text-[#8B90E8]">
               Learn More
             </button>
           </article>
-          <article className="linear-gradient p-8 rounded shadow lg:w-full lg:scale-110">
+          <article className="linear-gradient-prof p-8 rounded-xl shadow lg:w-full lg:scale-110">
             <h2 className="text-white text-xl mb-5">Professional</h2>
             {!Annually ? (
               <h3 className="flex items-center justify-center text-white text-7xl mr-3">
@@ -73,28 +73,22 @@ const App = () => {
             )}
 
             <ul className="flex justify-center flex-col my-8">
-              <li className="text-white border-t border-white py-3 ">
-                1 TB Storage
-              </li>
-              <li className="text-white border-t border-white py-3">
-                5 Users Allowed
-              </li>
-              <li className="text-white border-y border-white py-3">
-                Send up to 1 GB
-              </li>
+              <li className="text-white border-t py-3">1 TB Storage</li>
+              <li className="text-white border-t py-3">5 Users Allowed</li>
+              <li className="text-white border-y py-3">Send up to 1 GB</li>
             </ul>
-            <button className="bg-white text-slate-800 py-2 w-full rounded-lg shadow border-2 border-white uppercase cursor-pointer hover:bg-transparent hover:text-white">
-              <span>Learn More</span>
+            <button className="bg-white text-[#8B90E8] py-2 w-full rounded-lg shadow border-2 border-white uppercase cursor-pointer hover:bg-transparent hover:text-white prof-after-hover">
+              <span className="prof-learn-more-btn">Learn More</span>
             </button>
           </article>
-          <article className="p-8 rounded bg-white shadow lg:w-full ">
+          <article className="p-8 rounded-xl bg-white shadow lg:w-full ">
             <h2 className="text-slate-500 text-xl mb-5">Master</h2>
             {!Annually ? (
-              <h3 className="flex items-center justify-center text-slate-700 text-7xl mr-3">
+              <h3 className="flex items-center justify-center text-[#494c5f] text-7xl mr-3">
                 <span className="text-3xl">$</span>39.99
               </h3>
             ) : (
-              <h3 className="flex items-center justify-center text-slate-700 text-7xl mr-3">
+              <h3 className="flex items-center justify-center text-[#494c5f] text-7xl mr-3">
                 <span className="text-3xl">$</span>399.99
               </h3>
             )}
@@ -110,12 +104,12 @@ const App = () => {
                 Send up to 20 GB
               </li>
             </ul>
-            <button className="linear-gradient text-white border-none py-2 w-full rounded-lg shadow uppercase cursor-pointer hover:bg-transparent hover:text-slate-800">
+            <button className="linear-gradient text-white border-none py-2 w-full rounded-lg shadow uppercase cursor-pointer hover:bg-transparent hover:text-[#8B90E8]">
               Learn More
             </button>
           </article>
         </div>
-      </section>
+      </div>
       <div className="absolute left-0 bottom-0 -z-50">
         <img src={bottomBG} alt="" className="w-full max-w-full" />
       </div>
